@@ -1,0 +1,190 @@
+[32m[1026 12:36:40 @logger.py:82][0m Log file set to /root/NerveNet/log/mujoco_ReacherOne-v12023_10_26-12:36:39.log
+[32m[1026 12:36:40 @rollout_agent.py:55][0m The sampler 0 is online
+[32m[1026 12:36:40 @rollout_agent.py:55][0m The sampler 1 is online
+[32m[1026 12:36:40 @rollout_agent.py:55][0m The sampler 2 is online
+[32m[1026 12:36:40 @rollout_agent.py:55][0m The sampler 3 is online
+[32m[1026 12:36:40 @rollout_agent.py:55][0m The sampler 4 is online
+[32m[1026 12:36:40 @summary_handler.py:44][0m summary write initialized, writing to /root/NerveNet/summary/ReacherOne-v1_2023_10_26-12:36:39
+[32m[1026 12:36:40 @gated_graph_policy_network.py:79][0m Network shape is [64, 64]
+[32m[1026 12:36:40 @gated_graph_policy_network.py:79][0m Network shape is [64, 64]
+[32m[1026 12:36:40 @gated_graph_policy_network.py:79][0m Network shape is [64, 64]
+[32m[1026 12:36:40 @gated_graph_policy_network.py:79][0m Network shape is [64, 64]
+[32m[1026 12:36:40 @gated_graph_policy_network.py:79][0m Network shape is [64, 64]
+[32m[1026 12:36:40 @gated_graph_policy_network.py:79][0m Network shape is [64, 64]
+[32m[1026 12:36:40 @mujoco_parser.py:331][0m 2 joint found
+[32m[1026 12:36:40 @mujoco_parser.py:331][0m 2 body found
+[32m[1026 12:36:40 @mujoco_parser.py:489][0m scanning ob information...
+[32m[1026 12:36:40 @mujoco_parser.py:538][0m after qpos, the ob size is reaching 2
+[32m[1026 12:36:40 @mujoco_parser.py:538][0m after qvel, the ob size is reaching 4
+[32m[1026 12:36:40 @mujoco_parser.py:538][0m after root_add_5, the ob size is reaching 9
+[32m[1026 12:36:40 @mujoco_parser.py:331][0m 2 joint found
+[32m[1026 12:36:40 @mujoco_parser.py:331][0m 2 body found
+[32m[1026 12:36:40 @mujoco_parser.py:489][0m scanning ob information...
+[32m[1026 12:36:40 @mujoco_parser.py:538][0m after qpos, the ob size is reaching 2
+[32m[1026 12:36:40 @mujoco_parser.py:538][0m after qvel, the ob size is reaching 4
+[32m[1026 12:36:40 @mujoco_parser.py:538][0m after root_add_5, the ob size is reaching 9
+[32m[1026 12:36:40 @mujoco_parser.py:331][0m 2 joint found
+[32m[1026 12:36:40 @mujoco_parser.py:331][0m 2 body found
+[32m[1026 12:36:40 @mujoco_parser.py:489][0m scanning ob information...
+[32m[1026 12:36:40 @mujoco_parser.py:538][0m after qpos, the ob size is reaching 2
+[32m[1026 12:36:40 @mujoco_parser.py:538][0m after qvel, the ob size is reaching 4
+[32m[1026 12:36:40 @mujoco_parser.py:538][0m after root_add_5, the ob size is reaching 9
+[32m[1026 12:36:40 @mujoco_parser.py:331][0m 2 joint found
+[32m[1026 12:36:40 @mujoco_parser.py:331][0m 2 body found
+[32m[1026 12:36:40 @mujoco_parser.py:489][0m scanning ob information...
+[32m[1026 12:36:40 @mujoco_parser.py:538][0m after qpos, the ob size is reaching 2
+[32m[1026 12:36:40 @mujoco_parser.py:538][0m after qvel, the ob size is reaching 4
+[32m[1026 12:36:40 @mujoco_parser.py:538][0m after root_add_5, the ob size is reaching 9
+[32m[1026 12:36:40 @mujoco_parser.py:331][0m 2 joint found
+[32m[1026 12:36:40 @mujoco_parser.py:331][0m 2 body found
+[32m[1026 12:36:40 @mujoco_parser.py:489][0m scanning ob information...
+[32m[1026 12:36:40 @mujoco_parser.py:538][0m after qpos, the ob size is reaching 2
+[32m[1026 12:36:40 @mujoco_parser.py:538][0m after qvel, the ob size is reaching 4
+[32m[1026 12:36:40 @mujoco_parser.py:331][0m 2 joint found
+[32m[1026 12:36:40 @mujoco_parser.py:538][0m after root_add_5, the ob size is reaching 9
+[32m[1026 12:36:40 @mujoco_parser.py:331][0m 2 body found
+[32m[1026 12:36:40 @mujoco_parser.py:489][0m scanning ob information...
+[32m[1026 12:36:40 @mujoco_parser.py:538][0m after qpos, the ob size is reaching 2
+[32m[1026 12:36:40 @mujoco_parser.py:538][0m after qvel, the ob size is reaching 4
+[32m[1026 12:36:40 @mujoco_parser.py:538][0m after root_add_5, the ob size is reaching 9
+[32m[1026 12:36:40 @gated_graph_policy_network.py:343][0m building prop mlp for edge type [1]
+[32m[1026 12:36:40 @gated_graph_policy_network.py:343][0m building prop mlp for edge type [1]
+[32m[1026 12:36:40 @gated_graph_policy_network.py:343][0m building prop mlp for edge type [1]
+[32m[1026 12:36:40 @gated_graph_policy_network.py:343][0m building prop mlp for edge type [1]
+[32m[1026 12:36:40 @gated_graph_policy_network.py:343][0m building prop mlp for edge type [1]
+[32m[1026 12:36:40 @gated_graph_policy_network.py:343][0m building prop mlp for edge type [1]
+[32m[1026 12:36:40 @gated_graph_policy_network.py:374][0m building node update function for node type {'joint': [1, 2], 'root': [0]}
+[32m[1026 12:36:40 @gated_graph_policy_network.py:374][0m building node update function for node type {'joint': [1, 2], 'root': [0]}
+[32m[1026 12:36:40 @gated_graph_policy_network.py:374][0m building node update function for node type {'joint': [1, 2], 'root': [0]}
+[32m[1026 12:36:40 @gated_graph_policy_network.py:374][0m building node update function for node type {'joint': [1, 2], 'root': [0]}
+[32m[1026 12:36:40 @gated_graph_policy_network.py:374][0m building node update function for node type {'joint': [1, 2], 'root': [0]}
+[32m[1026 12:36:40 @gated_graph_policy_network.py:374][0m building node update function for node type {'joint': [1, 2], 'root': [0]}
+[32m[1026 12:36:41 @graph_data_util.py:85][0m Building new send_idx and receive_idx for the model, current batch size: 64
+[32m[1026 12:36:41 @graph_data_util.py:85][0m Building new send_idx and receive_idx for the model, current batch size: 1
+[32m[1026 12:36:41 @graph_data_util.py:85][0m Building new send_idx and receive_idx for the model, current batch size: 1
+[32m[1026 12:36:41 @graph_data_util.py:85][0m Building new send_idx and receive_idx for the model, current batch size: 1
+[32m[1026 12:36:41 @graph_data_util.py:85][0m Building new send_idx and receive_idx for the model, current batch size: 1
+[32m[1026 12:36:41 @graph_data_util.py:85][0m Building new send_idx and receive_idx for the model, current batch size: 1
+[32m[1026 12:36:41 @rollout_master_agent.py:119][0m Rollouts generating ...
+[32m[1026 12:36:41 @rollout_master_agent.py:121][0m 2050 time steps from 41 episodes collected
+[32m[1026 12:36:41 @graph_data_util.py:85][0m Building new send_idx and receive_idx for the model, current batch size: 2050
+[32m[1026 12:36:41 @optimization_agent.py:324][0m |        surr |          kl |         ent |     vf_loss|   weight_l2|
+[32m[1026 12:36:41 @optimization_agent.py:405][0m | 0.00866419 | 0.00764542 |     2.8314 |   824.4177 |   628.4261 |
+[32m[1026 12:36:42 @optimization_agent.py:405][0m | -0.00472119 | 0.00459223 |     2.8194 |   797.8406 |   628.4283 |
+[32m[1026 12:36:42 @optimization_agent.py:405][0m | -0.00842274 | 0.00459403 |     2.8080 |   769.5502 |   628.8290 |
+[32m[1026 12:36:43 @optimization_agent.py:405][0m | -0.01124830 | 0.00648829 |     2.7954 |   735.5977 |   629.4976 |
+[32m[1026 12:36:43 @optimization_agent.py:405][0m | -0.01019741 | 0.00600913 |     2.7845 |   695.2347 |   630.3041 |
+[32m[1026 12:36:43 @optimization_agent.py:405][0m | -0.01292546 | 0.00886607 |     2.7748 |   647.7045 |   631.3572 |
+[32m[1026 12:36:44 @optimization_agent.py:405][0m | -0.01973388 | 0.00807887 |     2.7657 |   595.3799 |   632.6901 |
+[32m[1026 12:36:44 @optimization_agent.py:405][0m | -0.01869723 | 0.01051454 |     2.7582 |   540.3853 |   634.1912 |
+[32m[1026 12:36:44 @optimization_agent.py:405][0m | -0.01864439 | 0.00987919 |     2.7487 |   486.1832 |   635.8753 |
+[32m[1026 12:36:45 @optimization_agent.py:405][0m | -0.01932441 | 0.01152870 |     2.7412 |   434.6104 |   637.5494 |
+[32m[1026 12:36:45 @optimization_agent.py:476][0m learning_rate:                            0.0003
+[32m[1026 12:36:45 @optimization_agent.py:476][0m weight_l2_loss:                           638.4391
+[32m[1026 12:36:45 @optimization_agent.py:476][0m entropy:                                  2.7376437
+[32m[1026 12:36:45 @optimization_agent.py:476][0m avg_reward:                               -113.83260492052071
+[32m[1026 12:36:45 @optimization_agent.py:476][0m kl:                                       0.009613712
+[32m[1026 12:36:45 @optimization_agent.py:476][0m vf_loss:                                  409.12238
+[32m[1026 12:36:45 @optimization_agent.py:476][0m surr_loss:                                -0.023715239
+[32m[1026 12:36:45 @optimization_agent.py:481][0m ------------- Printing hyper-parameters -----------
+[32m[1026 12:36:45 @optimization_agent.py:483][0m target_kl_low: 0.5
+[32m[1026 12:36:45 @optimization_agent.py:483][0m optim_epochs: 10
+[32m[1026 12:36:45 @optimization_agent.py:483][0m use_gnn_as_value: 0
+[32m[1026 12:36:45 @optimization_agent.py:483][0m gnn_embedding_option: noninput_shared
+[32m[1026 12:36:45 @optimization_agent.py:483][0m optim_batch_size: 64
+[32m[1026 12:36:45 @optimization_agent.py:483][0m shared_network: 0
+[32m[1026 12:36:45 @optimization_agent.py:483][0m min_ckpt_iteration_diff: 20
+[32m[1026 12:36:45 @optimization_agent.py:483][0m time_id: 2023_10_26-12:36:39
+[32m[1026 12:36:45 @optimization_agent.py:483][0m seed: 1234
+[32m[1026 12:36:45 @optimization_agent.py:483][0m lr_schedule: adaptive
+[32m[1026 12:36:45 @optimization_agent.py:483][0m value_lr: 0.0003
+[32m[1026 12:36:45 @optimization_agent.py:483][0m gae_lam: 0.95
+[32m[1026 12:36:45 @optimization_agent.py:483][0m gnn_input_feat_dim: 64
+[32m[1026 12:36:45 @optimization_agent.py:483][0m baseline_loss_coeff: 1.0
+[32m[1026 12:36:45 @optimization_agent.py:483][0m monitor: 0
+[32m[1026 12:36:45 @optimization_agent.py:483][0m weight_decay_coeff: 1e-05
+[32m[1026 12:36:45 @optimization_agent.py:483][0m ppo_clip: 0.2
+[32m[1026 12:36:45 @optimization_agent.py:483][0m use_gpu: 0
+[32m[1026 12:36:45 @optimization_agent.py:483][0m checkpoint_ignore_varstr: INVALID
+[32m[1026 12:36:45 @optimization_agent.py:483][0m baseline_type: tf
+[32m[1026 12:36:45 @optimization_agent.py:483][0m write_log: 1
+[32m[1026 12:36:45 @optimization_agent.py:483][0m network_shape: [64, 64]
+[32m[1026 12:36:45 @optimization_agent.py:483][0m lr: 0.0003
+[32m[1026 12:36:45 @optimization_agent.py:483][0m output_dir: None
+[32m[1026 12:36:45 @optimization_agent.py:483][0m checkpoint_start_iteration: 50
+[32m[1026 12:36:45 @optimization_agent.py:483][0m test: 0
+[32m[1026 12:36:45 @optimization_agent.py:483][0m use_weight_decay: 0
+[32m[1026 12:36:45 @optimization_agent.py:483][0m ckpt_name: None
+[32m[1026 12:36:45 @optimization_agent.py:483][0m logstd_option: load
+[32m[1026 12:36:45 @optimization_agent.py:483][0m use_kl_penalty: 0
+[32m[1026 12:36:45 @optimization_agent.py:483][0m max_pathlength: 50
+[32m[1026 12:36:45 @optimization_agent.py:483][0m grad_clip_value: 5.0
+[32m[1026 12:36:45 @optimization_agent.py:483][0m advantage_method: gae
+[32m[1026 12:36:45 @optimization_agent.py:483][0m mlp_raw_transfer: 0
+[32m[1026 12:36:45 @optimization_agent.py:483][0m gnn_init_method: orthogonal
+[32m[1026 12:36:45 @optimization_agent.py:483][0m kl_alpha: 1.5
+[32m[1026 12:36:45 @optimization_agent.py:483][0m task_name: ReacherOne-v1
+[32m[1026 12:36:45 @optimization_agent.py:483][0m extra_vf_optim_epochs: 0
+[32m[1026 12:36:45 @optimization_agent.py:483][0m gnn_output_option: unified
+[32m[1026 12:36:45 @optimization_agent.py:483][0m purpose: debug_experiments
+[32m[1026 12:36:45 @optimization_agent.py:483][0m kl_eta: 50
+[32m[1026 12:36:45 @optimization_agent.py:483][0m root_connection_option: nN,Rn,uE
+[32m[1026 12:36:45 @optimization_agent.py:483][0m gnn_node_option: nG,nB
+[32m[1026 12:36:45 @optimization_agent.py:483][0m num_threads: 4
+[32m[1026 12:36:45 @optimization_agent.py:483][0m node_update_method: GRU
+[32m[1026 12:36:45 @optimization_agent.py:483][0m task: ReacherOne-v1
+[32m[1026 12:36:45 @optimization_agent.py:483][0m target_kl_high: 2
+[32m[1026 12:36:45 @optimization_agent.py:483][0m write_summary: 1
+[32m[1026 12:36:45 @optimization_agent.py:483][0m max_timesteps: 1000000
+[32m[1026 12:36:45 @optimization_agent.py:483][0m transfer_env: Nothing2Nothing
+[32m[1026 12:36:45 @optimization_agent.py:483][0m use_gnn_as_policy: 1
+[32m[1026 12:36:45 @optimization_agent.py:483][0m video_freq: 2500
+[32m[1026 12:36:45 @optimization_agent.py:483][0m summary_freq: 1
+[32m[1026 12:36:45 @optimization_agent.py:483][0m minibatch_all_feed: 0
+[32m[1026 12:36:45 @optimization_agent.py:483][0m gamma: 0.99
+[32m[1026 12:36:45 @optimization_agent.py:483][0m timesteps_per_batch: 2050
+[32m[1026 12:36:45 @optimization_agent.py:483][0m gnn_node_hidden_dim: 64
+[32m[1026 12:36:45 @optimization_agent.py:483][0m debug: 0
+[32m[1026 12:36:45 @optimization_agent.py:483][0m gnn_num_prop_steps: 4
+[32m[1026 12:36:45 @optimization_agent.py:483][0m lr_alpha: 2
+[32m[1026 12:36:45 @optimization_agent.py:483][0m target_kl: 0.01
+[32m[1026 12:36:45 @optimization_agent.py:484][0m experiment name: 
+[32m[1026 12:36:45 @main.py:77][0m ------------- Iteration 1 --------------
+[32m[1026 12:36:45 @main.py:80][0m total time: 0.07 mins
+[32m[1026 12:36:45 @main.py:82][0m optimization agent spent : 0.06 mins
+[32m[1026 12:36:45 @main.py:83][0m rollout agent spent : 0.01 mins
+[32m[1026 12:36:45 @main.py:85][0m 2050 total steps have happened
+[32m[1026 12:36:45 @rollout_master_agent.py:119][0m Rollouts generating ...
+[32m[1026 12:36:45 @rollout_master_agent.py:121][0m 2050 time steps from 41 episodes collected
+[32m[1026 12:36:45 @optimization_agent.py:324][0m |        surr |          kl |         ent |     vf_loss|   weight_l2|
+[32m[1026 12:36:46 @optimization_agent.py:405][0m | 0.00241399 | 0.00329512 |     2.7308 |   564.0762 |   638.8209 |
+[32m[1026 12:36:46 @optimization_agent.py:405][0m | -0.00410326 | 0.00569654 |     2.7174 |   499.5540 |   639.2982 |
+[32m[1026 12:36:47 @optimization_agent.py:405][0m | -0.00775062 | 0.00364584 |     2.7043 |   450.0081 |   639.8040 |
+[32m[1026 12:36:47 @optimization_agent.py:405][0m | -0.00920593 | 0.00460994 |     2.6912 |   408.3886 |   640.6178 |
+[32m[1026 12:36:47 @optimization_agent.py:405][0m | -0.01104613 | 0.00527505 |     2.6803 |   369.1957 |   641.6704 |
+[32m[1026 12:36:48 @optimization_agent.py:405][0m | -0.01297679 | 0.00578468 |     2.6695 |   331.8853 |   642.8789 |
+[32m[1026 12:36:48 @optimization_agent.py:405][0m | -0.01493036 | 0.00675091 |     2.6602 |   298.3269 |   644.3216 |
+[32m[1026 12:36:48 @optimization_agent.py:405][0m | -0.01199707 | 0.00860882 |     2.6518 |   268.5595 |   645.8122 |
+[32m[1026 12:36:49 @optimization_agent.py:405][0m | -0.01467007 | 0.00891745 |     2.6443 |   243.3336 |   647.2861 |
+[32m[1026 12:36:49 @optimization_agent.py:405][0m | -0.01523755 | 0.00948872 |     2.6375 |   222.2266 |   648.8505 |
+[32m[1026 12:36:49 @optimization_agent.py:476][0m learning_rate:                            0.0003
+[32m[1026 12:36:49 @optimization_agent.py:476][0m weight_l2_loss:                           649.581
+[32m[1026 12:36:49 @optimization_agent.py:476][0m entropy:                                  2.6339219
+[32m[1026 12:36:49 @optimization_agent.py:476][0m avg_reward:                               -101.78761055505778
+[32m[1026 12:36:49 @optimization_agent.py:476][0m kl:                                       0.009649566
+[32m[1026 12:36:49 @optimization_agent.py:476][0m vf_loss:                                  212.65369
+[32m[1026 12:36:49 @optimization_agent.py:476][0m surr_loss:                                -0.019029712
+[32m[1026 12:36:49 @main.py:77][0m ------------- Iteration 2 --------------
+[32m[1026 12:36:49 @main.py:80][0m total time: 0.14 mins
+[32m[1026 12:36:49 @main.py:82][0m optimization agent spent : 0.06 mins
+[32m[1026 12:36:49 @main.py:83][0m rollout agent spent : 0.01 mins
+[32m[1026 12:36:49 @main.py:85][0m 4100 total steps have happened
+[32m[1026 12:36:50 @rollout_master_agent.py:119][0m Rollouts generating ...
+[32m[1026 12:36:50 @rollout_master_agent.py:121][0m 2050 time steps from 41 episodes collected
+[32m[1026 12:36:50 @optimization_agent.py:324][0m |        surr |          kl |         ent |     vf_loss|   weight_l2|
+[32m[1026 12:36:50 @optimization_agent.py:405][0m | -0.00005786 | 0.00266611 |     2.6284 |   335.2979 |   650.3860 |
+[32m[1026 12:36:50 @optimization_agent.py:405][0m | -0.00414325 | 0.00565185 |     2.6131 |   275.9276 |   652.0598 |
+[32m[1026 12:36:51 @optimization_agent.py:405][0m | -0.00760212 | 0.00416410 |     2.6004 |   249.2462 |   653.6258 |
+[32m[1026 12:36:51 @optimization_agent.py:405][0m | -0.00986390 | 0.00551311 |     2.5891 |   230.1535 |   655.1242 |
+[32m[1026 12:36:52 @optimization_agent.py:405][0m | -0.00993200 | 0.00483511 |     2.5792 |   215.1958 |   656.4702 |
+[32m[1026 12:36:52 @optimization_agent.py:405][0m | -0.01302321 | 0.00598017 |     2.5697 |   202.9491 |   657.6033 |
