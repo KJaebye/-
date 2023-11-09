@@ -79,9 +79,9 @@ COPY requirements.txt /tmp/requirements.txt
 RUN pip install -r /tmp/requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 # install CUDA and torch
-RUN pip install torch==1.8.0 torchvision==0.9.0 torchaudio==0.8.0
+RUN pip install torch==1.8.1 torchvision==0.9.1 torchaudio==0.8.1
 ENV CUDA=cu102
-ENV TORCH=1.8.0
+ENV TORCH=1.8.1
 RUN pip install torch-scatter -f https://pytorch-geometric.com/whl/torch-${TORCH}+${CUDA}.html
 RUN pip install torch-sparse==0.6.12 -f https://pytorch-geometric.com/whl/torch-${TORCH}+${CUDA}.html
 RUN pip install torch-cluster==1.6.0 -f https://pytorch-geometric.com/whl/torch-${TORCH}+${CUDA}.html
@@ -98,3 +98,5 @@ ENV LD_LIBRARY_PATH=/root/.mujoco/mujoco210/bin
 RUN pip install -U 'mujoco-py<2.2,>=2.1'
 
 ENV OMP_NUM_THREADS=1
+
+RUN pip install Cython==3.0.0a10
