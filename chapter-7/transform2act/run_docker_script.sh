@@ -16,6 +16,7 @@ xhost +
 docker run -it --gpus=all --rm \
     -v ${MOUNT_DIR}:/root/Transform2Act \
     -v /tmp/.X11-unix:/tmp/.X11-unix \
+    -p 6006:6006 \
     -e DISPLAY=unix$DISPLAY \
     -e GDK_SCALE \
     -e GDK_DPI_SCALE \

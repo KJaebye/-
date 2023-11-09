@@ -19,7 +19,7 @@ sh run_docker_script.sh python main.py --task ReacherOne-v1 --use_gnn_as_policy 
 ```
 类似的，运行脚本`run_docker_script.sh`，查看训练曲线：
 ```shell
-sh run_docker_script tensorboard --logdir=$(pwd)/dict-to-tb --port 6006
+sh run_docker_script tensorboard --logdir=<dict-to-tb> --host=0.0.0.0 --port 6006
 ```
 
 ## 第七章
@@ -42,4 +42,12 @@ sh run_docker_script.sh python train.py augmentbipedhard -n 40 -e 10 -t 2
 ```shell
 sh run_docker_script.sh python model.py augmentbipedhard zoo/augmentbipedhard.json
 ```
+
 ### 形态结构的优化
+```shell
+sh run_docker_script.sh python design_opt/train.py --cfg hopper --gpu 0
+```
+
+```shell
+sh run_docker_script.sh tensorboard --logdir=results/hopper/tb --host=0.0.0.0 --port=6006
+```
