@@ -1,0 +1,100 @@
+# @ description: Dockerfile for Transform2Act
+# @ author: Kangyao Huang
+# @ date: 09.Nov.2023
+
+FROM nvidia/cudagl:10.2-devel-ubuntu18.04
+
+RUN sed -i s@/archive.ubuntu.com/@/mirrors.aliyun.com/@g /etc/apt/sources.list
+RUN apt-get update
+# tzdata is required below. To avoid hanging, install it first.
+RUN DEBIAN_FRONTEND="noninteractive" apt-get install tzdata -y
+RUN apt-get install git wget libgl1-mesa-glx -y
+
+# Install python3.
+RUN apt-get install gcc libpq-dev -y
+RUN apt-get install python-dev  python-pip -y
+RUN apt-get install python3-dev python3-pip python3-venv python3-wheel -y
+
+# Make python3.7 the default python.
+RUN rm /usr/bin/python3
+RUN rm /usr/bin/python
+RUN ln -s /usr/bin/python3.7 /usr/bin/python3
+RUN ln -s /usr/bin/python3.7 /usr/bin/python
+RUN apt-get install python3.7-distutils -y
+
+# Prerequisites
+RUN apt-get install \
+  libopenmpi-dev \
+  libosmesa6-dev \
+  libgl1-mesa-glx \
+  libglfw3 \
+  libglew-dev \
+  patchelf \
+  gcc \
+  python3.7-dev \
+  unzip -y \
+  libxrandr2 \
+  libxinerama1 \
+  libxcursor1 \
+  vim \
+  openssh-server \
+  swig \
+  libpcre3-dev \
+  libharfbuzz0b \
+  libpcre16-3 \
+  libxcb-keysyms1-dev libxcb-image0-dev \
+    libxcb-shm0-dev libxcb-icccm4-dev libxcb-sync0-dev libxcb-xfixes0-dev \
+    libxcb-shape0-dev libxcb-randr0-dev libxcb-render-util0-dev \
+    libfontconfig1-dev libfreetype6-dev libx11-dev libxext-dev libxfixes-dev \
+    libxi-dev libxrender-dev libxcb1-dev libx11-xcb-dev libxcb-glx0-dev x11vnc \
+    xauth build-essential mesa-common-dev libglu1-mesa-dev libxkbcommon-dev \
+    libxcb-xkb-dev libxslt1-dev libxkbcommon-x11-0
+
+# SSH config
+RUN echo "root:123123" | chpasswd
+RUN echo 'PermitRootLogin yes' >> /etc/ssh/sshd_config
+RUN echo 'PasswordAuthentication yes' >> /etc/ssh/sshd_config
+RUN echo 'X11Forwarding yes' >> /etc/ssh/sshd_config
+RUN echo 'X11Displayoffset 10' >> /etc/ssh/sshd_config
+RUN echo 'X11UseLocalhost no' >> /etc/ssh/sshd_config
+RUN service ssh restart
+
+# set SSH auto-on
+RUN touch /root/start_ssh.sh
+RUN echo '#!/bin/bash \n\
+  LOGTIME=$(date "+%Y-%m-%d %H:%M:%S") \n\
+  echo "[$LOGTIME] startup run..." >>/root/start_ssh.log \n\
+  service ssh start >>/root/start_ssh.log' >> /root/start_ssh.sh
+RUN chmod +x /root/start_ssh.sh
+RUN echo '# startup run \n\
+  if [ -f /root/start_ssh.sh ]; then \n\
+      /root/start_ssh.sh \n\
+  fi' >> /root/.bashrc
+
+# pip python env.
+RUN pip install --upgrade pip
+RUN pip install scikit-build -i http://pypi.douban.com/simple --trusted-host pypi.douban.com
+WORKDIR /root/
+COPY requirements.txt /tmp/requirements.txt
+RUN pip install -r /tmp/requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+
+# install CUDA and torch
+RUN pip install torch==1.8.0 torchvision==0.9.0 torchaudio==0.8.0
+ENV CUDA=cu102
+ENV TORCH=1.8.0
+RUN pip install torch-scatter -f https://pytorch-geometric.com/whl/torch-${TORCH}+${CUDA}.html
+RUN pip install torch-sparse==0.6.12 -f https://pytorch-geometric.com/whl/torch-${TORCH}+${CUDA}.html
+RUN pip install torch-cluster==1.6.0 -f https://pytorch-geometric.com/whl/torch-${TORCH}+${CUDA}.html
+RUN pip install torch-spline-conv -f https://pytorch-geometric.com/whl/torch-${TORCH}+${CUDA}.html
+RUN pip install torch-geometric==1.6.1
+
+# Download and install mujoco.
+WORKDIR /root/
+RUN wget https://mujoco.org/download/mujoco210-linux-x86_64.tar.gz
+RUN mkdir /root/.mujoco
+RUN tar -zxvf mujoco210-linux-x86_64.tar.gz -C ~/.mujoco
+RUN rm mujoco210-linux-x86_64.tar.gz
+ENV LD_LIBRARY_PATH=/root/.mujoco/mujoco210/bin
+RUN pip install -U 'mujoco-py<2.2,>=2.1'
+
+ENV OMP_NUM_THREADS=1
