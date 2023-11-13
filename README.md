@@ -2,7 +2,7 @@
 使用即用即弃的docker containner和脚本运行的形式以简化代码复现的难度。
 
 ## 第六章
-### NerveNet 实验
+### NerveNet实验
 
 首先在chapter-6文件夹中运行`download_docker_image.sh`:
 ```shell
