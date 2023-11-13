@@ -2,7 +2,7 @@
 使用即用即弃的docker containner和脚本运行的形式以简化代码复现的难度。
 
 ## 第六章
-### NerveNet实验
+### 结构化形态控制 - NerveNet实验
 
 首先在chapter-6文件夹中运行`download_docker_image.sh`:
 ```shell
@@ -23,7 +23,7 @@ sh run_docker_script tensorboard --logdir=<dict-to-tb> --host=0.0.0.0 --port 600
 ```
 
 ## 第七章
-### 形态参数的优化
+### 形态参数的优化 - EvoBiped实验
 首先在终端cd到`co-evo`文件夹，并运行`build_docker_image.sh`：
 ```shell
 sh build_docker_image.sh
@@ -43,11 +43,22 @@ sh run_docker_script.sh python train.py augmentbipedhard -n 40 -e 10 -t 2
 sh run_docker_script.sh python model.py augmentbipedhard zoo/augmentbipedhard.json
 ```
 
-### 形态结构的优化
+### 形态结构的优化 - Transform2Act实验
+首先在终端cd到`transform2act`文件夹，并运行`build_docker_image.sh`：
 ```shell
-sh run_docker_script.sh python design_opt/train.py --cfg hopper --gpu 0
+sh build_docker_image.sh
 ```
-
+然后运行训练脚本`run_docker_script.sh`，后缀输入命令与参数来分别对应不同的实验：
 ```shell
-sh run_docker_script.sh tensorboard --logdir=results/hopper/tb --host=0.0.0.0 --port=6006
+sh run_docker_script.sh {transform2act的github网站运行命令}
+```
+运行命令可以在https://github.com/Khrylx/Transform2Act找到。
+例如：
+训练`hopper`任务
+```shell
+python design_opt/train.py --cfg hopper --gpu 0
+```
+查看训练过程
+```shell
+python tensorboard --logdir=result/hopper/tb --host 0.0.0.0 --port 6006
 ```
